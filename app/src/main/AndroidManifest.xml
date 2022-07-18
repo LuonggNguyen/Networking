@@ -4,9 +4,11 @@
     package="com.example.networking"
     android:targetSandboxVersion="1">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".Lab3.AppController"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -17,6 +19,21 @@
         android:theme="@style/Theme.Networking"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".Lab3.Lab3Bai4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lab3.Lab3Bai3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lab3.Lab3Bai2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lab3.Lab3Bai1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lab3Activity"
+            android:exported="false" />
         <activity
             android:name=".Lab2.Lab2Bai4Activity"
             android:exported="false" />

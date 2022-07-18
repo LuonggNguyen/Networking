@@ -1,27 +1,27 @@
 package com.example.networking;
 
 import android.content.Intent;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.networking.Lab1.Bai1Lab1Activity;
-import com.example.networking.Lab1.Bai3Lab1Activity;
-import com.example.networking.Lab1.Bai4Lab1Activity;
-import com.example.networking.Lab1.SplashScreen;
-import com.example.networking.R;
+import com.example.networking.Lab2.Lab2Bai1Activity;
+import com.example.networking.Lab3.Lab3Bai1Activity;
+import com.example.networking.Lab3.Lab3Bai2Activity;
+import com.example.networking.Lab3.Lab3Bai3Activity;
+import com.example.networking.Lab3.Lab3Bai4Activity;
 
-public class Lab1Activity extends AppCompatActivity {
+
+public class Lab3Activity extends AppCompatActivity {
 
     Button btn1,btn2,btn3,btn4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lab1);
+        setContentView(R.layout.activity_lab3);
         btn1 = findViewById(R.id.btnBai1);
         btn2 = findViewById(R.id.btnBai2);
         btn3 = findViewById(R.id.btnBai3);
@@ -29,32 +29,30 @@ public class Lab1Activity extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Lab1Activity.this, Bai1Lab1Activity.class);
+                Intent intent = new Intent(Lab3Activity.this, Lab3Bai1Activity.class);
                 startActivity(intent);
             }
         });
-
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Lab1Activity.this, SplashScreen.class);
+                Intent intent = new Intent(Lab3Activity.this, Lab3Bai2Activity.class);
                 startActivity(intent);
             }
         });
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Lab1Activity.this, Bai3Lab1Activity.class);
+                Intent intent = new Intent(Lab3Activity.this, Lab3Bai3Activity.class);
                 startActivity(intent);
             }
         });
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Lab1Activity.this, Bai4Lab1Activity.class);
+                Intent intent = new Intent(Lab3Activity.this, Lab3Bai4Activity.class);
                 startActivity(intent);
             }
         });
     }
-
 }

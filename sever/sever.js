@@ -1,4 +1,6 @@
 var exports = module.exports;
+
+//lab2
 exports.result = (name,score) => {
     return `Name: ${name}   Score: ${score}`
 }
@@ -20,3 +22,5 @@ exports.ptb2 = (a,b,c) => {
         return `Phuong trinh co 2 nghiem kep x1 =${(-b-Math.sqrt(delta))/(2*a)}   x2 =${(-b+Math.sqrt(delta))/(2*a)}`
     }
 }
+
+

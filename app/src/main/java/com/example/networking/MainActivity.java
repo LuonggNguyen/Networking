@@ -4,13 +4,15 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.networking.Lab1.Bai1Lab1Activity;
 
@@ -28,6 +30,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         btn1 = findViewById(R.id.btnLab1);
         btn2 = findViewById(R.id.btnLab2);
+        btn3 = findViewById(R.id.btnLab3);
+        btn4 = findViewById(R.id.btnLab4);
+        btn5 = findViewById(R.id.btnLab5);
+        btn6 = findViewById(R.id.btnLab6);
+        btn7 = findViewById(R.id.btnLab7);
+        btn8 = findViewById(R.id.btnLab8);
+
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +50,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Lab2Activity.class);
+                startActivity(intent);
+            }
+        });
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,Lab3Activity.class);
                 startActivity(intent);
             }
         });

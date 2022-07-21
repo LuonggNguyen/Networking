@@ -20,6 +20,21 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".Lab4.ResetPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Lab4.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Lab4.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Lab4.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Lab4Activity"
+            android:exported="false" />
+        <activity
             android:name=".Lab3.Lab3Bai4Activity"
             android:exported="false" />
         <activity

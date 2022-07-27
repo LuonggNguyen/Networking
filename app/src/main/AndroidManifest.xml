@@ -20,6 +20,18 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".Lab5.EditProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Lab5.AddProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Lab5.AllProductsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Lab5Activity"
+            android:exported="false" />
+        <activity
             android:name=".Lab4.ResetPassActivity"
             android:exported="false" />
         <activity

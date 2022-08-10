@@ -8,7 +8,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name=".Lab3.AppController"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -20,85 +19,34 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".Lab5.EditProductActivity"
+            android:name=".Product.EditProductActivity"
             android:exported="false" />
         <activity
-            android:name=".Lab5.AddProductActivity"
+            android:name=".Product.AddProductActivity"
             android:exported="false" />
         <activity
-            android:name=".Lab5.AllProductsActivity"
+            android:name=".Product.AllProductsActivity"
             android:exported="false" />
         <activity
-            android:name=".Lab5Activity"
+            android:name=".ProductActivity"
             android:exported="false" />
         <activity
-            android:name=".Lab4.ResetPassActivity"
+            android:name=".Authentication.ResetPassActivity"
             android:exported="false" />
         <activity
-            android:name=".Lab4.ProfileActivity"
+            android:name=".Authentication.ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".Lab4.LoginActivity"
+            android:name=".Authentication.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".Lab4.RegisterActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Lab4Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Lab3.Lab3Bai4Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Lab3.Lab3Bai3Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Lab3.Lab3Bai2Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Lab3.Lab3Bai1Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Lab3Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Lab2.Lab2Bai4Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Lab2.Lab2Bai3Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Lab2.Lab2Bai2Activity"
+            android:name=".Authentication.RegisterActivity"
             android:exported="false" />
 
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
 
-        <activity
-            android:name=".Lab2.Lab2Bai1Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Lab2Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Lab1.Bai4Lab1Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Lab1.Bai3Lab1Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Lab1.Bai2Lab1Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Lab1.SplashScreen"
-            android:exported="false" />
-        <activity
-            android:name=".Lab1.Bai1Lab1Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Lab1Activity"
-            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

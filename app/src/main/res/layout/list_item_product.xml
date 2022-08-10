@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
     <!-- Product id (pid) - will be HIDDEN - used to pass to other activity
    -->
     <TextView
@@ -9,6 +10,10 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:visibility="gone" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/imgProduct"/>
     <!-- Name Label -->
     <TextView
         android:id="@+id/name"
@@ -17,7 +22,10 @@
         android:paddingTop="6dip"
         android:paddingLeft="6dip"
         android:textSize="17dip"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#000"
+        />
     <TextView
         android:id="@+id/price"
         android:layout_width="fill_parent"
@@ -25,5 +33,8 @@
         android:paddingTop="6dip"
         android:paddingLeft="6dip"
         android:textSize="17dip"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#000"
+        />
 </LinearLayout>

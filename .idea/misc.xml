@@ -4,7 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Luong Nguyen/Desktop/Networking/app/src/main/res/layout/activity_add_product.xml" value="0.259375" />
-        <entry key="..\:/Users/Luong Nguyen/Desktop/Networking/app/src/main/res/layout/activity_all_products.xml" value="0.11018518518518519" />
+        <entry key="..\:/Users/Luong Nguyen/Desktop/Networking/app/src/main/res/layout/activity_all_products.xml" value="0.2" />
         <entry key="..\:/Users/Luong Nguyen/Desktop/Networking/app/src/main/res/layout/activity_bai1_lab1.xml" value="0.1175925925925926" />
         <entry key="..\:/Users/Luong Nguyen/Desktop/Networking/app/src/main/res/layout/activity_bai1_lab3.xml" value="0.103125" />
         <entry key="..\:/Users/Luong Nguyen/Desktop/Networking/app/src/main/res/layout/activity_bai2_lab1.xml" value="0.259375" />
@@ -37,8 +37,8 @@
         <entry key="..\:/Users/Luong Nguyen/Desktop/Networking/app/src/main/res/layout/fragment_login.xml" value="0.16799999999999998" />
         <entry key="..\:/Users/Luong Nguyen/Desktop/Networking/app/src/main/res/layout/fragment_register.xml" value="0.24682971014492755" />
         <entry key="..\:/Users/Luong Nguyen/Desktop/Networking/app/src/main/res/layout/list_item.xml" value="0.103125" />
-        <entry key="..\:/Users/Luong Nguyen/Desktop/Networking/app/src/main/res/layout/list_item_product.xml" value="0.1" />
-        <entry key="..\:/Users/Luong Nguyen/Desktop/Networking/app/src/main/res/layout/row_view.xml" value="0.1" />
+        <entry key="..\:/Users/Luong Nguyen/Desktop/Networking/app/src/main/res/layout/list_item_product.xml" value="0.2" />
+        <entry key="..\:/Users/Luong Nguyen/Desktop/Networking/app/src/main/res/layout/row_view.xml" value="0.2" />
         <entry key="..\:/Users/Luong Nguyen/Desktop/Networking/app/src/main/res/xml/network_security_config.xml" value="0.12604166666666666" />
       </map>
     </option>

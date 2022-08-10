@@ -2,12 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:layout_marginLeft="40dp"
-    android:layout_marginRight="40dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
     android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Lab4.LoginActivity">
+    tools:context=".Authentication.LoginActivity">
     <TextView
         android:text="Login"
         android:textSize="22sp"
@@ -26,7 +26,8 @@
             android:id="@+id/et_email"
             android:inputType="textEmailAddress"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="Protate3008@gmail.com"/>
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:layout_marginTop="8dp"
@@ -38,7 +39,8 @@
             android:id="@+id/et_password"
             android:inputType="textPassword"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="123456Aa"/>
     </com.google.android.material.textfield.TextInputLayout>
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_login"

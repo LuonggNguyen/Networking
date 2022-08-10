@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Lab5.AddProductActivity"
+    tools:context=".Product.AddProductActivity"
     android:orientation="vertical">
     <TextView
         android:layout_width="match_parent"
@@ -16,6 +16,18 @@
         android:textSize="17dip" />
     <EditText
         android:id="@+id/edtProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="Product Image URL"
+        android:textSize="17dip" />
+    <EditText
+        android:id="@+id/edtImg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView

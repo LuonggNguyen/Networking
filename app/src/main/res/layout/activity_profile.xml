@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".Lab4.ProfileActivity">
+    tools:context=".Authentication.ProfileActivity">
     <TextView
         android:id="@+id/tv_name"
         android:layout_marginTop="20dp"

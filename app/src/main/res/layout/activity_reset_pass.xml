@@ -8,7 +8,7 @@
     android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Lab4.ResetPassActivity">
+    tools:context=".Authentication.ResetPassActivity">
     <TextView
         android:text="Learn2Crack"
         android:textSize="22sp"

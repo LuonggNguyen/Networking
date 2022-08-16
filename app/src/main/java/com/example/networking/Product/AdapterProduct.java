@@ -4,6 +4,9 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.ScaleAnimation;
+import android.view.animation.TranslateAnimation;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -58,6 +61,11 @@ public class AdapterProduct extends BaseAdapter {
         viewHolder.tvName.setText(product.getName());
         viewHolder.tvPrice.setText("$"+product.getPrice());
         Picasso.get().load(product.getImg()).into(viewHolder.imgProduct);
+        Animation animation;
+        animation = new TranslateAnimation(300, 0, 0, 0);
+        animation.setDuration(600);
+        view.startAnimation(animation);
+
         return view;
     }
 }

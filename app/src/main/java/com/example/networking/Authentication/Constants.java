@@ -1,7 +1,8 @@
 package com.example.networking.Authentication;
 
 public class Constants {
-    public static final String BASE_URL = "http://192.168.1.8:8080/";
+    public static String IP = "172.16.31.37";
+    public static final String BASE_URL = "http://"+IP+":8080/";
     public static final String REGISTER_OPERATION = "register";
     public static final String LOGIN_OPERATION = "login";
     public static final String CHANGE_PASSWORD_OPERATION = "chgPass";

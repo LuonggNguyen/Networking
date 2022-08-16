@@ -4,6 +4,9 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.widget.EditText;
+import android.widget.ImageView;
+
+import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -18,14 +21,16 @@ public class GetProducDetailsTask extends AsyncTask<String, String , String> {
     JSONParser jsonParser;
     EditText edtName, edtImg, edtPrice, edtDes;
     Product product;
+    ImageView imgProduct;
     public GetProducDetailsTask(Context context, EditText edtName,EditText edtImg,
-                                EditText edtPrice, EditText edtDes){
+                                EditText edtPrice, EditText edtDes, ImageView imgProduct){
         this.context = context;
         this.edtName = edtName;
         this.edtImg = edtImg;
         this.edtPrice = edtPrice;
         this.edtDes = edtDes;
-        jsonParser = new JSONParser();
+        this.imgProduct = imgProduct;
+    jsonParser = new JSONParser();
     }
     @Override
     protected void onPreExecute() {
@@ -60,7 +65,6 @@ public class GetProducDetailsTask extends AsyncTask<String, String , String> {
                 product.setName(obj.getString(Constants.TAG_NAME));
                 product.setImg(obj.getString(Constants.TAG_IMG));
                 product.setPrice(obj.getString(Constants.TAG_PRICE));
-
                 product.setDescription(obj.getString(Constants.TAG_DESCRIPTION));
             }
         }catch (Exception e){
@@ -78,5 +82,7 @@ public class GetProducDetailsTask extends AsyncTask<String, String , String> {
         edtImg.setText(product.getImg());
         edtPrice.setText(product.getPrice());
         edtDes.setText(product.getDescription());
+        Picasso.get().load(edtImg.getText().toString()).into(imgProduct);
+
     }
 }

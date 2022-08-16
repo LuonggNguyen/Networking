@@ -38,10 +38,9 @@ public class EditProductActivity extends AppCompatActivity {
         btnSave = (Button) findViewById(R.id.btnSave);
         btnDelete = (Button) findViewById(R.id.btnDelete);
         pid = getIntent().getStringExtra(Constants.TAG_PID);
-        Log.e("//", "=="+pid );
-        Picasso.get().load(edtImg.toString()).into(imgProduct);
-        productDetailsTask = new GetProducDetailsTask(this,edtName,edtImg,edtPrice,edtDes);
+        productDetailsTask = new GetProducDetailsTask(this,edtName,edtImg,edtPrice,edtDes,imgProduct);
         productDetailsTask.execute(pid);
+
 
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override

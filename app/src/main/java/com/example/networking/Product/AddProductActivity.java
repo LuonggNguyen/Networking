@@ -19,10 +19,10 @@ public class AddProductActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_product);
-        edtName = (EditText)findViewById(R.id.edtProductName);
-        edtImg = (EditText)findViewById(R.id.edtImg);
-        edtPrice = (EditText)findViewById(R.id.edtProductPrice);
-        edtDescription = (EditText)findViewById(R.id.edtProductDes);
+        edtName = (EditText)findViewById(R.id.edtProductNameAdd);
+        edtImg = (EditText)findViewById(R.id.edtImgAdd);
+        edtPrice = (EditText)findViewById(R.id.edtProductPriceAdd);
+        edtDescription = (EditText)findViewById(R.id.edtProductDesAdd);
         btnAdd = (Button)findViewById(R.id.btnAdd);
         newProductTask = new CreateNewProducTask(this);
 
@@ -33,7 +33,7 @@ public class AddProductActivity extends AppCompatActivity {
                 strImg = edtImg.getText().toString();
                 strPrice = edtPrice.getText().toString();
                 strDes = edtDescription.getText().toString();
-                newProductTask.execute(strName,strPrice,strDes);
+                newProductTask.execute(strName,strImg,strPrice,strDes);
             }
         });
     }

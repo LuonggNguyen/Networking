@@ -22,7 +22,6 @@ public class JSONParser {
     static InputStream is = null;
     static JSONObject jObj = null;
     static String json = "";
-    // constructor
     public JSONParser() {
     }
 
@@ -33,6 +32,7 @@ public class JSONParser {
         try {
             if (method.equals("POST")) {
                 URL url = new URL(duongdan);
+                Log.e("URL ===",url.toString() );
                 HttpURLConnection urlConnection = (HttpURLConnection)
                         url.openConnection();
                 urlConnection.setRequestMethod("POST");

@@ -41,7 +41,8 @@ public class SaveProductDetailsTask extends AsyncTask<String, String,String> {
         params.add(hsName);
         HashMap<String, String> hsImg = new HashMap<>();
         hsImg.put(Constants.TAG_IMG, strings[2]);
-        params.add(hsName);HashMap<String, String> hsPrice = new HashMap<>();
+        params.add(hsImg);
+        HashMap<String, String> hsPrice = new HashMap<>();
         hsPrice.put(Constants.TAG_PRICE, strings[3]);
         params.add(hsPrice);
         HashMap<String, String> hsDes = new HashMap<>();
